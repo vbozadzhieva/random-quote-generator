@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
     text-align: center;
     background: url(https://cdn.pixabay.com/photo/2016/11/29/03/09/beach-1866992_1280.jpg) no-repeat center center / cover;
@@ -19,7 +19,8 @@ body {
 
 .container {
     width: 550px;
-    height: 450px;
+    height: 400px;
+    margin-top: 80px;
 }
 
 .header {
@@ -62,8 +63,9 @@ body {
 }
 
 .main-content .person {
-    font-size: 1.3rem;
-    color: cornflowerblue;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: brown;
     text-transform: uppercase;
 }
 
@@ -89,4 +91,10 @@ body {
 .warning {
     color: red;
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 40px 20px;
+    }
 }
