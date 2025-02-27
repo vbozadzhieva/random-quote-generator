@@ -18,8 +18,8 @@ body {
 }
 
 .container {
-    max-width: 550px;
-    max-height: 450px;
+    width: 550px;
+    height: 450px;
 }
 
 .header {
@@ -38,8 +38,13 @@ body {
     height: 350px;
     background-color: whitesmoke;
     border-radius: 15px;
-    padding: 50px 40px;
+    padding: 40px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-content .text-area {
@@ -47,11 +52,19 @@ body {
     line-height: 1.5;
 }
 
+.icon {
+    width: 80px;
+    height: 80px;
+}
+
+.icon img {
+    width: 100%;
+}
+
 .main-content .person {
     font-size: 1.3rem;
     color: cornflowerblue;
     text-transform: uppercase;
-    margin-top: 20px;
 }
 
 .button-area button {
@@ -71,4 +84,9 @@ body {
 
 .button-area button:active {
     background-color: cornflowerblue;
+}
+
+.warning {
+    color: red;
+    font-weight: bold;
 }

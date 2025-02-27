@@ -4,11 +4,23 @@ let person = document.querySelector('.person');
 
 btn.addEventListener('click', function () {
 
+
     // generate a num between 0 and the total number of quotes
     let randomNum = Math.floor(Math.random() * quotes.length);
 
     quote.innerText = quotes[randomNum].quote;
     person.innerText = quotes[randomNum].person;
+
+    quotes.splice(randomNum, 1);
+
+    if (quotes.length == 0) {
+        quote.innerText = 'Sorry, there are no quotes left \n :(';
+        quote.setAttribute('class', 'warning');
+        person.innerText = '';
+        btn.disabled = true;
+    }
+
+    document.querySelector('.icon').remove();
 });
 
 const quotes = [
