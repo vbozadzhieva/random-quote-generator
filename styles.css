@@ -97,3 +97,29 @@ body {
         padding: 40px 20px;
     }
 }
+
+@media (max-width: 300px) {
+    .container {
+        height: 350px;
+        margin-top: 20px;
+    }
+    
+    .header,
+    .button-area button {
+        font-size: 1em;
+    }
+
+    .main-content {
+        height: 320px;
+
+    }
+
+    .main-content .text-area {
+        font-size: 1.1em;
+        line-height: 1.3;
+    }
+
+    .main-content .person {
+        font-size: 0.8em;
+    }
+}
